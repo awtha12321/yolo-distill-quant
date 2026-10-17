@@ -1,0 +1,11 @@
+__pycache__/
+*.egg-info/
+.venv/
+.vscode/
+build/
+dist/
+runs/
+weights/
+*.pt
+.pytest_cache/
+run_eval.sh

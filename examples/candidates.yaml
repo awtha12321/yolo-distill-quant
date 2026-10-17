@@ -1,0 +1,5 @@
+# name: [depth, width, max_channels]
+"Nano (Control Baseline)": [0.50, 0.25, 1024]
+"Pico-A (Depth cut)": [0.25, 0.25, 1024]
+"Pico-B (Depth + cap 512)": [0.25, 0.25, 512]
+"Pico-C (Aggressive 256)": [0.25, 0.25, 256]

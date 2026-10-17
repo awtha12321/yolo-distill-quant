@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yolo-distill-quant"
+version = "0.1.0"
+description = "A teacher-student knowledge distillation and quantization framework for building ultra-compact YOLO models."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "AGPL-3.0" }
+dependencies = [
+    "ultralytics",
+    "torch",
+    "pyyaml",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+evaluate-candidates-map = "yolo_distill_quant.scale_search.evaluate_candidates_map:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
